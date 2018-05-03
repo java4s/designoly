@@ -214,7 +214,7 @@ bottom: 0px;
 opacity: 0.75;
 filter: alpha(opacity=100);
 }
-
+<!--RM-->
 #window {
 width: 700px;
 height: 350px;
@@ -610,6 +610,7 @@ div#topad {
 	text-decoration: none !important;
 }
 
+<!--RM-->
 input#search_buttoni {
 	background: url(sec.gif) repeat-x; /* search button background */
 	font-family: Arial, sans-serif;
