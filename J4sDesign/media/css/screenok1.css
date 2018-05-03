@@ -1067,7 +1067,7 @@ div#round_headerLie {
 	}
 	
 	#shadow1t,#shadow2t {
-		display: block;
+		display: block !important;
 	}
 	
 	div#shadow1{
