@@ -26,7 +26,8 @@ $(document).ready(function(){
 		var bd = /(body)/gi;
 		var title = /(title)/gi;
 		var maven = /(groupId|artifactId|version|modelVersion|java.version)/gi;
-		
+		var returnStr = /(return)/gi;
+		var pkage = /(package)/gi;
 		
 		
 		//(?:\S+\s)?\S*=\S*(?:\s\S+)? before and after =
@@ -51,7 +52,9 @@ $(document).ready(function(){
 									.replace(title, "<span class='title'>$1</span>")
 									.replace(annotations, "<span class='annotations'>$1</span>")
 									.replace(quotes, '<span class=brg>$1</span>')
-									.replace(maven, '<span class=maven>$1</span>');;							
+									.replace(maven, '<span class=maven>$1</span>')
+									.replace(returnStr, '<span class=returnStr>$1</span>')
+									.replace(pkage, '<span class=pkage>$1</span>');										
 			
 		   var lee = formatedText.split('\n');
 			

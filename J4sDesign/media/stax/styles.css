@@ -46,6 +46,12 @@
 .maven{
 	color: #cd4067;
 }
+.returnStr{
+	color: #e9306d;
+}
+.pkage{
+	color: #6030e9;
+}
 .linelight {
     background: #FAEEB9;
 	display: inline;
@@ -89,7 +95,7 @@ pre[class*="lang"] .line-numbers {
 .preContent .line-numbers span,
 pre[class*="lang"] .line-numbers span{
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     margin-right: 5px;
     margin-left: 5px;
 }
