@@ -74,7 +74,10 @@ pre[class*="lang"] {
     color: #112B53;
     border: 1px solid #B8DE7C;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: scroll;
+   -webkit-border-radius: 4px; 
+   -moz-border-radius: 4px;   
+    border-radius: 4px; 
 }
 
 .preContent:hover, 
