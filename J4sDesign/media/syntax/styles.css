@@ -1,0 +1,106 @@
+.blue {
+    color: #4252DA;
+}
+.orange {
+    color: #c6621c;
+}
+.green {
+    color: #A8C11B;
+}
+.brg {
+    color: #670FC4;
+}
+.red {
+    color: #E02D73;
+}
+.void {
+    color: #29CB7F;
+}
+.pink {
+    color: #CA193C;
+}
+.eq {
+    color: #5C92E3;
+}
+.pred {
+    color: #FB0846;
+}
+.comments {
+    color: #74b810!important;
+}
+.div {
+    color: #AD9025;
+}
+.bd {
+    color: #99AD25;
+}
+.title {
+    color: #1A63B2;
+}
+.annotations{
+	color: #431F9B;
+}
+.javaexclr{
+	color:#bf9141;
+}
+.maven{
+	color: #cd4067;
+}
+.linelight {
+    background: #FAEEB9;
+	display: inline;
+	width: 100%;
+	overflow-x: visible;	
+   -webkit-border-radius: 12px; 
+   -moz-border-radius: 12px;   
+    border-radius: 12px;
+	padding: 2px;
+    padding-right: 4em;	
+	font-family: verdana;
+	font-size: 14px;
+}
+.preContent, 
+pre[class*="lang"] {
+    font-family: verdana;
+    font-size: 14px;
+    background: #FEFFF7;
+    line-height: 22px;
+    color: #112B53;
+    border: 1px solid #B8DE7C;
+	width: 100%;
+	overflow: hidden;
+}
+
+.preContent:hover, 
+pre[class*="lang"].hover{
+	overflow: auto;	
+	overflow-y:hidden;
+	width: 100%;
+}
+
+.preContent .line-numbers, 
+pre[class*="lang"] .line-numbers {
+    float: left;
+    border-right: 1px solid #B8DE7C;
+    font-size: 15px;
+    display: block;
+    margin-right: 7px;
+}
+.preContent .line-numbers span,
+pre[class*="lang"] .line-numbers span{
+    display: block;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar{
+  width: 12px;  /* for vertical scrollbars */
+  height: 7px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track{
+  background: #D0E1A2;
+}
+::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.3);
+}
