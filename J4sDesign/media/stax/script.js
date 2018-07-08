@@ -22,6 +22,7 @@ $(document).ready(function(){
 		var script = /(script)/gi;
 		var scomments = /(\/\/ .*|\/\/.*)/gm;		
 		var propsComments = /(\#.*)/gm;	 //	If starting with (^#.*)
+		var escomments = /(<!--.*-->)/gm;
 		var annotations = /(\@.*)/gm;
 		var div = /(div)/gi;
 		var bd = /(body)/gi;
@@ -49,6 +50,7 @@ $(document).ready(function(){
 									.replace(script, "<span class='pred'>$1</span>") 
 									.replace(scomments, "<span class='scomments'>$1</span>")
 									.replace(propsComments, "<span class='propsComments'>$1</span>")
+									.replace(escomments, "<span class='escomments'>$1</span>")
 									.replace(div, "<span class='div'>$1</span>")
 									.replace(bd, "<span class='bd'>$1</span>")
 									.replace(title, "<span class='title'>$1</span>")
