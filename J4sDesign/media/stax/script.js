@@ -20,7 +20,8 @@ $(document).ready(function(){
 		var pink = /(static)/gi;
 		var beforeeq = /(\w*\s?)(?= =)/g;
 		var script = /(script)/gi;
-		var scomments = /(\/\/ .*|\/\/.*)/gm;
+		var scomments = /(\/\/ .*|\/\/.*)/gm;		
+		var propsComments = /(\#.*)/gm;	 //	If starting with (^#.*)
 		var annotations = /(\@.*)/gm;
 		var div = /(div)/gi;
 		var bd = /(body)/gi;
@@ -45,8 +46,9 @@ $(document).ready(function(){
 									.replace(voidKey, "<span class='void'>$1</span>")
 									.replace(pink, "<span class='pink'>$1</span>")
 									.replace(beforeeq, "<span class='eq'>$1</span>")
-									.replace(script, "<span class='pred'>$1</span>")  
+									.replace(script, "<span class='pred'>$1</span>") 
 									.replace(scomments, "<span class='scomments'>$1</span>")
+									.replace(propsComments, "<span class='propsComments'>$1</span>")
 									.replace(div, "<span class='div'>$1</span>")
 									.replace(bd, "<span class='bd'>$1</span>")
 									.replace(title, "<span class='title'>$1</span>")
@@ -54,10 +56,9 @@ $(document).ready(function(){
 									.replace(quotes, '<span class=brg>$1</span>')
 									.replace(maven, '<span class=maven>$1</span>')
 									.replace(returnStr, '<span class=returnStr>$1</span>')
-									.replace(pkage, '<span class=pkage>$1</span>');										
-			
-		   var lee = formatedText.split('\n');
-			
+									.replace(pkage, '<span class=pkage>$1</span>');
+		   
+		   var lee = formatedText.split('\n');			
 		
 		   var l = null;
 			
