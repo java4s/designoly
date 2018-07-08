@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var javarx = /(javax)/g;
 		var classkey = /(class)/gi;
 		var regexO = /(public|private|System|{|})/gi;
-		var symbols = /(<|>|{|})/gi;
+		var symbols = /(<|>|{|})/gi;  //<([^\W].*) Allows only chars after <
 		var dataType1= /(String)/g;
 		var newKey= /(new)/g;
 		var voidKey= /(void|head)/g;
@@ -22,7 +22,8 @@ $(document).ready(function(){
 		var script = /(script)/gi;
 		var scomments = /(\/\/ .*|\/\/.*)/gm;		
 		var propsComments = /(\#.*)/gm;	 //	If starting with (^#.*)
-		var escomments = /(<!--.*-->)/gm;
+		var escomments = /(<!--([\s\S](?!-->))+[\s\S]-->)/gm;
+		var commentsthree = /(\/\*([\s\S](?!\*\/))+[\s\S]\*\/)/gm;
 		var annotations = /(\@.*)/gm;
 		var div = /(div)/gi;
 		var bd = /(body)/gi;
@@ -51,6 +52,7 @@ $(document).ready(function(){
 									.replace(scomments, "<span class='scomments'>$1</span>")
 									.replace(propsComments, "<span class='propsComments'>$1</span>")
 									.replace(escomments, "<span class='escomments'>$1</span>")
+									.replace(commentsthree, "<span class='commentsthree'>$1</span>")
 									.replace(div, "<span class='div'>$1</span>")
 									.replace(bd, "<span class='bd'>$1</span>")
 									.replace(title, "<span class='title'>$1</span>")

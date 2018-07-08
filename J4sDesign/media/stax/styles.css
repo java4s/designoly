@@ -25,7 +25,10 @@
 .pred {
     color: #FB0846;
 }
-.scomments,.propsComments,.escomments {
+.scomments,
+.propsComments,
+.escomments,
+.commentsthree {
     color: #74b810!important;
 }
 .div {
