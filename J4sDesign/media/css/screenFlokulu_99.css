@@ -1103,16 +1103,14 @@ h2,#containerArchives #content h2 {
 #sidebar h2{width: 100%;margin-top: 0px;}
 	
 blockquote {
-	background: #f9fbf6;	
+	background: #FEFFF7;	
 	width: 87%;
 	font-family: verdana;	
 	padding-left: 10px;
 	padding-bottom: 6px;
 	padding-right: 10px;
-	border: 2px solid #d5ddc6;	
-	 -moz-box-shadow: 1px 0px 4px #d4d4d4;
-  -webkit-box-shadow: 1px 0px 4px #d4d4d4;
-    box-shadow: 1px 0px 4px #d4d4d4;
+	border: 1px solid #B8DE7C;
+	border-left: 3px solid #d0e1a2;
 	}
 
 #containerArchives #content ul li {
