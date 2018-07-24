@@ -1149,7 +1149,7 @@ blockquote {
 		width: auto;
 		text-align: center;
 		padding: 2em 0px 2em 0px;
-		background: #F9FCF5;
+		/*background: #F9FCF5;*/
 	}
 	
 	#commentsStart,

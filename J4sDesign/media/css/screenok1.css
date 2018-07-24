@@ -153,7 +153,7 @@ transform: rotate(-50deg) translate(-6px, 4px) ;
 }
 
 #fastad{
-	margin: 15px 0px 25px 0px;
+	margin: 25px 0px 25px 0px;
 }
 
 
@@ -973,7 +973,7 @@ div#round_headerLie {
 	#inAds{
 		text-align: center;
 		margin-top: 1em;
-		margin-bottom: 2em;
+		margin-bottom: 0em;
 		clear: both;
 	}
 
