@@ -164,6 +164,7 @@ transform: rotate(-50deg) translate(-6px, 4px) ;
 .pnbuttons{
    float: right;
    margin-top: 2em;
+   clear: both;
 }
 td#byname
 {
